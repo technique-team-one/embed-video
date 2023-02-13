@@ -116,17 +116,17 @@ function detectDailymotion (url) {
 
 embed.vimeo = function (id, opts) {
   opts = parseOptions(opts)
-  return '<iframe src="//player.vimeo.com/video/' + id + opts.query + '"' + opts.attr + ' frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  return '<iframe src="https://player.vimeo.com/video/' + id + opts.query + '"' + opts.attr + ' frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
 }
 
 embed.youtube = function (id, opts) {
   opts = parseOptions(opts)
-  return '<iframe src="//www.youtube.com/embed/' + id + opts.query + '"' + opts.attr + ' frameborder="0" allowfullscreen></iframe>'
+  return '<iframe src="https://www.youtube.com/embed/' + id + opts.query + '"' + opts.attr + ' frameborder="0" allowfullscreen></iframe>'
 }
 
 embed.dailymotion = function (id, opts) {
   opts = parseOptions(opts)
-  return '<iframe src="//www.dailymotion.com/embed/video/' + id + opts.query + '"' + opts.attr + ' frameborder="0" allowfullscreen></iframe>'
+  return '<iframe src="https://www.dailymotion.com/embed/video/' + id + opts.query + '"' + opts.attr + ' frameborder="0" allowfullscreen></iframe>'
 }
 
 embed.youtube.image = function (id, opts, cb) {
